@@ -15,12 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('empleados',function(){
-    return view('/empleados/index');
-})->name('empleados');
 
 Route::get('departamentos','DepartamentoController@sacardepartamentos')->name('departamentos');
 
-Route::get('proyectos',function(){
-    return view('/proyectos/index');
-})->name('proyectos');
+Route::get('empleados','EmpleadoController@sacarempleados')->name('empleados');
+
+Route::get('proyectos','ProyectoController@sacarproyectos')->name('proyectos');

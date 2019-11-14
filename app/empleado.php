@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class proyectos extends Model
+class empleado extends Model
 {
-    protected $table = 'proyectos';
+    protected $table = 'empleados';
 }
