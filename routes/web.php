@@ -19,9 +19,7 @@ Route::get('empleados',function(){
     return view('/empleados/index');
 })->name('empleados');
 
-Route::get('departamentos',function(){
-    return view('/departamentos/index');
-})->name('departamentos');
+Route::get('departamentos','DepartamentoController@sacardepartamentos')->name('departamentos');
 
 Route::get('proyectos',function(){
     return view('/proyectos/index');

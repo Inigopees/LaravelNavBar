@@ -12,6 +12,7 @@
       <th>Nombre</th>
     </tr>
 
+    @echo $departamentos;
     <tr>
       <td>Aqui el id</td>
       <td>Aqui el nombre</td>
