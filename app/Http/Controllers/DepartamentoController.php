@@ -11,4 +11,9 @@ class DepartamentoController extends Controller
         return view('departamentos/index',['departamentos'=>$datos]);
     } 
     
+    public function show(request $request){
+        $id=$request->get('id');
+        $datos = departamento::all()->where('id',$id);
+        return view('departamentos/departamento',['departamentos'=>$datos]);
+    }
 }

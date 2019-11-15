@@ -3,9 +3,9 @@
 @section('title', 'UD5. ORM')
 
 @section('content')
-
-  <h2>Departamentos</h2>
-
+@foreach($departamentos as $departamento)
+  <h2>Departamento {{$departamento->nombre}}:</h2>
+@endforeach
   <table>
     <tr>
       <th>Id</th>
@@ -15,7 +15,7 @@
     @foreach($departamentos as $departamento)
       <tr>
         <td>{{$departamento->id}}</td>
-        <td><a href="{{route('departamento',['id' => $departamento->id])}}">{{$departamento->nombre}}</a></td>
+        <td>{{$departamento->nombre}}</td>
       </tr>
     @endforeach
   </table>

@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::get('empleado','EmpleadoController@show')->name('empleado');
 
+Route::get('departamento','DepartamentoController@show')->name('departamento');
+
 Route::get('departamentos','DepartamentoController@sacardepartamentos')->name('departamentos');
 
 Route::get('empleados','EmpleadoController@sacarempleados')->name('empleados');

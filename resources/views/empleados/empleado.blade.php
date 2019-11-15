@@ -4,14 +4,13 @@
 
 @section('content')
 
-  <h2>Empleados</h2>
-
+@foreach($empleados as $empleado)
+  <h2>Empleado {{$empleado->nombre}}:</h2>
+@endforeach
     <table>
       <tr>
         <th>Id</th>
         <th>Nombre</th>
-        <th>Email</th>
-        <th>Telefono</th>
       </tr>
 
       @foreach($empleados as $empleado)
