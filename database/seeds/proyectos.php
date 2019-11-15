@@ -16,7 +16,7 @@ class proyectos extends Seeder
             'titulo' => 'Ultimo',
             'fechainicio' => '2019-12-1',
             'fechafin' => '2019-12-31',
-            'horasestimadas' =>156
+            'horasestimadas' =>156,
         ]);
     }
 }
