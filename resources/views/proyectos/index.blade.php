@@ -5,7 +5,7 @@
 @section('content')
 
   <h2>Proyectos</h2>
-  <button OnClick="" style="float:right">Insertar Proyecto</button>
+  <a href="" style="float:right">Insertar Proyecto</a>
 
     <table>
       <tr>
@@ -25,8 +25,8 @@
         <td>{{$proyecto->fechainicio}}</td>
         <td>{{$proyecto->fechafin}}</td>
         <td>{{$proyecto->horasestimadas}}</td>
-        <td><a href="">Editar</a></td>
-        <td><a href="">Eliminar</a></td>
+        <td><a href="{{route('proyectos.edit',$proyecto->id)}}">Editar</a></td>
+        <td><a href="{{route('proyectos.destroy',$proyecto->id)}}">Eliminar</a></td>
       </tr>
       @endforeach
       

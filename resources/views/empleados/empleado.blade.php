@@ -11,6 +11,8 @@
       <tr>
         <th>Id</th>
         <th>Nombre</th>
+        <th>Email</th>
+        <th>Telefono</th>
       </tr>
 
       @foreach($empleados as $empleado)

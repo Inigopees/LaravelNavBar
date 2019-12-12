@@ -3,21 +3,29 @@
 <head>
 	@include('layouts.head')
 	<title>@yield('title')</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet">
 </head>
 <body>
 
-    <div class="flex-center position-ref full-height">
-        <div class="content">
-            <div class="title m-b-md">
-                Relations
-            </div>
-
-            <div class="links">
-                <a href="{{route('proyectos')}}">Proyectos</a>
-                <a href="{{route('empleados')}}">Empleados</a>
-                <a href="{{route('departamentos')}}">Departamentos</a>
-            </div>
-            <hr><br><br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route('empleados')}}">Empleados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('proyectos.index')}}">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('departamentos')}}">Departamentos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
             <div class="op">
                 @yield('content')
             </div>
